@@ -1,0 +1,17 @@
+{
+  "name": "no4twitch",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": "https://github.com/no4any/no4twitch.git",
+  "author": "No4Any",
+  "license": "AGPL-3.0-only",
+  "scripts": {
+    "no4bot:start": "yarn workspace no4bot start"
+  },
+  "devDependencies": {
+    "yarn": "^1.22.19"
+  }
+}
