@@ -1,0 +1,3 @@
+services:
+  no4bot:
+    build: packages/no4bot

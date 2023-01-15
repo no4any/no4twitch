@@ -1,0 +1,48 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    overflow: hidden;
+}
+
+#grid {
+    width: 1920px;
+    height: 1080px;
+    display: grid;
+
+    grid-template-columns: 200px auto 200px;
+    grid-template-rows: 200px auto 200px;
+
+    grid-template-areas:
+        "top top top"
+        "left center right"
+        "bottom bottom bottom"
+    ;
+
+    #top {
+        grid-area: top;
+        background: rgba(255, 255, 255, 0.3)
+    }
+
+    #bottom {
+        grid-area: bottom;
+        background: rgba(255, 0, 0, 0.3)
+    }
+
+    #left {
+        grid-area: left;
+        background: rgba(0, 255, 0, 0.3)
+    }
+
+    #right {
+        grid-area: right;
+        background: rgba(0,0,255, 0.3)
+    }
+
+    #center {
+        grid-area: center;
+        background: rgba(0,0,0, 0.3);
+        color: #ffffff;
+    }
+}
